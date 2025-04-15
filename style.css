@@ -187,50 +187,50 @@ span {
     box-shadow: 0 0 25px var(--shadow-color);
 }
 
-.typing-text {
-    font-size: 3.2rem;
+.typing-text{
+    font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.typing-text span {
+.typing-text span{
     position: relative;
 }
 
-.typing-text span::before {
-    content: "Software Engineer";
-    color: var(--accent-color);
+.typing-text span::before{
+    content: "software Engineer";
+    color: #b74b4b;
     animation: words 20s infinite;
 }
 
-.typing-text span::after {
+.typing-text span::after{
     content: "";
-    background-color: var(--second-bg-color);
+    background-color: rgb(0, 18, 31);
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid var(--second-bg-color);
-    right: -8px;
+    border-left: 3px solid black;
+    right: -8;
     animation: cursor 0.6s infinite;
 }
 
-@keyframes cursor {
-    to {
-        border-left: 3px solid var(--accent-color);
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
     }
 }
 
-@keyframes words {
-    21%, 40% {
+@keyframes words{
+    21%, 40%{
         content: "Web Developer";
     }
-    41%, 60% {
+    41%, 60%{
         content: "C++ Developer";
     }
-    61%, 80% {
-        content: ".NET Developer";
+    61%, 80%{
+        content: "ML Engineer";
     }
-    81%, 100% {
+    81%, 100%{
         content: "Data Scientist";
     }
 }
