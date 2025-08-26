@@ -146,6 +146,12 @@
                         </div>
                     </div>
                     <div class="skill-box">
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <span class="skill-percent" style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
                         <h3>DataBase</h3>
                         <div class="skill-bar">
                             <span class="skill-percent" style="width: 65%;"></span>
@@ -210,7 +216,7 @@
                     <div class="timeline-content">
                         <h3>Web Development </h3>
                         <p>2023-2024</p>
-                        <p>Developed responsive websites and implemented front-end solutions using HTML, CSS, and JavaScript. Collaborated with senior developers to improve site functionality and user experience.</p>
+                        <p>Developed responsive websites and implemented front-end solutions using HTML, CSS,JavaScript and React. Collaborated with senior developers to improve site functionality and user experience.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -276,7 +282,7 @@
                 <div class="contact-card">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>faizanahd@gmail.com</p>
+                    <p>faizanahd289@gmail.com</p>
                 </div>
                 <div class="contact-card">
                     <i class="fas fa-phone"></i>
@@ -294,21 +300,21 @@
                     <p>dev-codee.github.io</p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+            <div class="contact-form" >
+                <form onsubmit="HandleSubmit(event)">
+                    <div class="form-group" >
+                        <input type="text" placeholder="Your Name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" placeholder="Your Email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" placeholder="Subject" name="subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea placeholder="Your Message" name="msg" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" >Send Message</button>
                 </form>
             </div>
         </div>
@@ -333,6 +339,7 @@
     </a>
 
     <!-- JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/3.2.0/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
