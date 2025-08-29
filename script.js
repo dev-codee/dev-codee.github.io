@@ -129,25 +129,25 @@ function HandleSubmit(event) {
     submitBtn.textContent = 'Sending...';
 
     // Your EmailJS credentials
-    const serviceID = 'service_h315itk';
-    const templateID = 'template_o5i2vbn';
-    const publicKey = '1KIt5F_DIwxWWZ3ut';
+    // const serviceID = 'service_h315itk';
+    // const templateID = 'template_o5i2vbn';
+    // const publicKey = '1KIt5F_DIwxWWZ3ut';
 
-    console.log('Attempting to send email with params:', templateParams);
+    // console.log('Attempting to send email with params:', templateParams);
 
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
-        .then((response) => {
-            console.log('Email successfully sent!', response.status, response.text);
-            alert('Email sent successfully! Thank you for your message.');
-            formEl.reset(); // Clear the form
-        })
-        .catch((error) => {
-            console.error('Failed to send email:', error);
-            alert('Failed to send email. Please try again later or contact me directly.');
-        })
-        .finally(() => {
-            // Re-enable submit button
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
-        });
+    // emailjs.send(serviceID, templateID, templateParams, publicKey)
+    //     .then((response) => {
+    //         console.log('Email successfully sent!', response.status, response.text);
+    //         alert('Email sent successfully! Thank you for your message.');
+    //         formEl.reset(); // Clear the form
+    //     })
+    //     .catch((error) => {
+    //         console.error('Failed to send email:', error);
+    //         alert('Failed to send email. Please try again later or contact me directly.');
+    //     })
+    //     .finally(() => {
+    //         // Re-enable submit button
+    //         submitBtn.disabled = false;
+    //         submitBtn.textContent = originalText;
+    //     });
 }
